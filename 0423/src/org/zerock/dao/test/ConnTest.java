@@ -12,6 +12,12 @@ import lombok.extern.log4j.Log4j;
 
 @Log4j
 public class ConnTest {
+	
+	
+	
+	
+	
+	
 
 	@Test
 	public void testOut() throws Exception {
