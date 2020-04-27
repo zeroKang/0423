@@ -15,7 +15,7 @@ public class MsgService {
 
 	public List<MsgVO> getWhom(String mid) {
 		// TODO Auto-generated method stub
-		return null;
+		return dao.getRecieve(mid);
 	}
 
 	public List<MsgVO> getWho(String mid) {

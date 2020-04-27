@@ -1,5 +1,7 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/fmt" prefix="fmt" %>
 
 <%@include file="../includes/header.jsp"%>
 
@@ -9,31 +11,24 @@
 	<a href="/msg/send" class="btn btn-primary">메시지 작성하기</a>
 </button>
 
-
 <table class="table table-striped">
 	<thead>
 		<tr>
-			<th>Firstname</th>
-			<th>Lastname</th>
-			<th>Email</th>
+			<th>MNO</th>
+			<th>whom</th>
+			<th>who</th>
+			<th>content</th>
 		</tr>
 	</thead>
 	<tbody>
+	<c:forEach items="${rlist}" var="msg">
 		<tr>
-			<td>John</td>
-			<td>Doe</td>
-			<td>john@example.com</td>
+			<td>${msg.mno}</td>
+			<td>${msg.whom}</td>
+			<td>${msg.who}</td>
+			<td>${msg.content}</td>
 		</tr>
-		<tr>
-			<td>Mary</td>
-			<td>Moe</td>
-			<td>mary@example.com</td>
-		</tr>
-		<tr>
-			<td>July</td>
-			<td>Dooley</td>
-			<td>july@example.com</td>
-		</tr>
+	</c:forEach>
 	</tbody>
 </table>
 

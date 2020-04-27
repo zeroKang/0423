@@ -42,6 +42,8 @@ public class MsgListController extends HttpServlet {
 
 		List<MsgVO> whomList = service.getWhom(mid);
 		
+		request.setAttribute("rlist", whomList);
+		
 		List<MsgVO> whoList = service.getWho(mid);
 		
 		
