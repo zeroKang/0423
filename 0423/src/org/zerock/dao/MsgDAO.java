@@ -38,6 +38,7 @@ public class MsgDAO {
 					.whom(rs.getString("whom"))
 					.who(rs.getString("who"))
 					.content(rs.getString("content"))
+					.regdate(rs.getTimestamp("regdate").toLocalDateTime())
 					.build();
 				result.add(vo);
 			}
