@@ -8,11 +8,11 @@ import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.ToString;
 
+@Builder
 @Getter
 @ToString
 @AllArgsConstructor
 @NoArgsConstructor
-@Builder
 public class MsgVO {
 
 	private Integer mno;
